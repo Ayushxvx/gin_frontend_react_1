@@ -9,7 +9,7 @@ export default function App() {
 
   useEffect(() => {
     async function func() {
-      let response = await fetch("http://localhost:8000/");
+      let response = await fetch("https://gin-backend-2.onrender.com/");
       let data = await response.json();
       setPosts(data);
       console.log(posts);
@@ -24,7 +24,7 @@ export default function App() {
       return;
     }
 
-    let response = await fetch("http://localhost:8000/addpost", {
+    let response = await fetch("https://gin-backend-2.onrender.com/addpost", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
