@@ -25,7 +25,7 @@ export default function App(){
       return;
     }
 
-    let response = await fetch("http://localhost:8000/addpost",{
+    let response = await fetch("https://gin-backend-2.onrender.com/addpost",{
       method:"POST",
       headers:{
         "Content-Type":"application/json"
